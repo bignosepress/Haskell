@@ -1,6 +1,6 @@
 module Utils where
 
-import qualified Haskell.Functions as F
+--import qualified Haskell.Functions as F
 
 fact1 = F.fact
 
@@ -30,7 +30,7 @@ myFoldr _ init [] = init
 
 main :: IO()
 main = do
-    putStrLn (show (F.fact 10))
+    putStrLn "Recursion"
 
 
 
