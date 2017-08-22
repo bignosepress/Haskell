@@ -2,7 +2,6 @@ module Utils where
 
 --import qualified Haskell.Functions as F
 
-fact1 = F.fact
 
 
 myMap :: (a -> b) -> [a] -> [b]
