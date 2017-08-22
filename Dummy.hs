@@ -1,2 +1,3 @@
-f x = x + 3
-
+main :: IO()
+main = do
+    putStrln "Hello World"
