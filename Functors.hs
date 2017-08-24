@@ -42,9 +42,14 @@ instance Functor (MyEither c) where
    fmap f (Right1 x) = Right1 (f x)
 
 
-    
+data Tree a = EmptyNode | Node a  (Tree a) (Tree a) deriving (Show)    
 
+instance Functor Tree where
+-- fmap (a -> b) -> Tree a -> Tree b
+   fmap f EmptyNode       = EmptyNode
+   fmap f (Node x y z)    = Node (f x) (fmap f y) (fmap f z)
 
+  
 
 
 
